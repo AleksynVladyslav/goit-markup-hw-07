@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио</title>
+    <title>Студия</title>
     <!-- <link rel= "preconnect"> просит браузер заранее подключиться к домену, когда вы хотите ускорить установку соединения в будущем. -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -44,12 +45,12 @@
         <nav class="nav">
           <ul class="nav-list list">
             <li class="list-item">
-              <a class="nav-link active-page link" href="./index.html"
-                >Studio</a
-              >
+              <a class="nav-link link" href="./index.html">Studio</a>
             </li>
             <li class="list-item">
-              <a class="nav-link link" href="./portfolio.html">Portfolio</a>
+              <a class="nav-link active-page link" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="list-item">
               <a class="nav-link link" href="">Contacts</a>
@@ -75,7 +76,7 @@
     </header>
 
     <main>
-      <section class="section">
+      <section class="section portfolio">
         <div class="conteiner">
           <h1 class="visually-hidden">filter</h1>
 
@@ -100,10 +101,13 @@
               <div class="card-thumb">
                 <img
                   class="filter-img"
-                  src="./images/portfolio-1.jpg"
+                  src="./images/portfolio/portfolio-1.jpg"
                   alt="banking app concept"
                   width="360"
                   height="300"
+                  srcset="
+                    ./images/portfolio/portfolio-1    w360,
+                    ./images/portfolio/portfolio-1_2x w720"
                 />
 
                 <div class="card-overlay">
@@ -126,10 +130,11 @@
               <div class="card-thumb">
                 <img
                   class="filter-img"
-                  src="./images/portfolio-2.jpg"
+                  src="./images/portfolio/portfolio-2.jpg"
                   alt="cashless payment"
-                  width="360"
-                  height="300"
+                  srcset="
+                  ./images/portfolio/portfolio-2    w360,
+                  ./images/portfolio/portfolio-2_2x w720"
                 />
 
                 <div class="card-overlay">
@@ -150,10 +155,11 @@
               <div class="card-thumb">
                 <img
                   class="filter-img"
-                  src="./images/portfolio-3.jpg"
+                  src="./images/portfolio/portfolio-3.jpg"
                   alt="meditaion app"
-                  width="360"
-                  height="300"
+                  srcset="
+                    ./images/portfolio/portfolio-3    w360,
+                    ./images/portfolio/portfolio-3_2x w720"
                 />
 
                 <div class="card-overlay">
@@ -174,10 +180,11 @@
               <div class="card-thumb">
                 <img
                   class="filter-img"
-                  src="./images/portfolio-4.jpg"
+                  src="./images/portfolio/portfolio-4.jpg"
                   alt="taxi service"
-                  width="360"
-                  height="300"
+                  srcset="
+                  ./images/portfolio/portfolio-4    w360,
+                  ./images/portfolio/portfolio-4_2x w720"
                 />
 
                 <div class="card-overlay">
@@ -198,10 +205,11 @@
               <div class="card-thumb">
                 <img
                   class="filter-img"
-                  src="./images/portfolio-5.jpg"
+                  src="./images/portfolio/portfolio-5.jpg"
                   alt="screen illustrations"
-                  width="360"
-                  height="300"
+                  srcset="
+                  ./images/portfolio/portfolio-5    w360,
+                  ./images/portfolio/portfolio-5_2x w720"
                 />
 
                 <div class="card-overlay">
@@ -222,10 +230,11 @@
               <div class="card-thumb">
                 <img
                   class="filter-img"
-                  src="./images/portfolio-6.jpg"
+                  src="./images/portfolio/portfolio-6.jpg"
                   alt="online courses"
-                  width="360"
-                  height="300"
+                  srcset="
+                  ./images/portfolio/portfolio-6    w360,
+                  ./images/portfolio/portfolio-6_2x w720"
                 />
 
                 <div class="card-overlay">
@@ -246,10 +255,11 @@
               <div class="card-thumb">
                 <img
                   class="filter-img"
-                  src="./images/portfolio-7.jpg"
+                  src="./images/portfolio/portfolio-7.jpg"
                   alt="instagram stories concept"
-                  width="360"
-                  height="300"
+                  srcset="
+                  ./images/portfolio/portfolio-7    w360,
+                  ./images/portfolio/portfolio-7_2x w720"
                 />
 
                 <div class="card-overlay">
@@ -272,10 +282,11 @@
               <div class="card-thumb">
                 <img
                   class="filter-img"
-                  src="./images/portfolio-8.jpg"
+                  src="./images/portfolio/portfolio-8.jpg"
                   alt="organic food"
-                  width="360"
-                  height="300"
+                  srcset="
+                  ./images/portfolio/portfolio-8    w360,
+                  ./images/portfolio/portfolio-8_2x w720"
                 />
 
                 <div class="card-overlay">
@@ -296,10 +307,11 @@
               <div class="card-thumb">
                 <img
                   class="filter-img"
-                  src="./images/portfolio-9.jpg"
+                  src="./images/portfolio/portfolio-9.jpg"
                   alt="fresh coffee"
-                  width="360"
-                  height="300"
+                  srcset="
+                    ./images/portfolio/portfolio-9    w360,
+                    ./images/portfolio/portfolio-9_2x w720"
                 />
 
                 <div class="card-overlay">
@@ -340,7 +352,7 @@
           </div>
 
           <nav class="nav-mobile">
-            <ul class="nav-list_mobile list">
+            <ul class="nav-list_mobil list">
               <li class="list-item">
                 <a class="nav-link_mobile link" href="./index.html">Studio</a>
               </li>

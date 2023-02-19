@@ -541,8 +541,6 @@ body {
   border: 1px solid #4d5ae5;
 }
 
-.form-field_checkbox {
-}
 .modal-label_checkbox {
   display: flex;
   align-items: center;
@@ -700,8 +698,6 @@ body {
   background-color: var(--cloud);
 }
 
-.team-cards {
-}
 @media screen and (min-width: 768px) {
   .team-cards {
     display: flex;
@@ -864,11 +860,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
-  padding-left: 40px;
-  padding-bottom: 40px;
-  padding-top: 24px;
-  padding-right: 24px;
+  height: 100vh;
+  padding: 40px;
 }
 
 @media (min-width: 768px) {
@@ -994,8 +987,6 @@ body {
   }
 }
 
-.footer-conteiner {
-}
 @media screen and (min-width: 768px) {
   .footer-conteiner {
     display: flex;
@@ -1029,6 +1020,8 @@ body {
 .cloud-color {
   display: inline-block;
   margin-bottom: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
 
   color: var(--cloud);
 }
@@ -1085,8 +1078,6 @@ body {
   background-color: var(--green);
 }
 
-.subscribe-wrapper {
-}
 @media screen and (min-width: 768px) {
   .subscribe-wrapper {
     margin-left: 93px;
@@ -1098,8 +1089,6 @@ body {
   }
 }
 
-.subscribe-form {
-}
 @media screen and (min-width: 768px) {
   .subscribe-form {
     display: flex;
@@ -1180,10 +1169,9 @@ body {
 .filter-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 72px;
   column-gap: 24px;
-}
-.filter-list > .list-item {
 }
 
 .filter-btn {
@@ -1271,8 +1259,6 @@ body {
   margin-bottom: 8px;
 }
 
-.filter-text {
-}
 .border-wrapper {
   padding-top: 32px;
   padding-bottom: 32px;

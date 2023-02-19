@@ -1161,19 +1161,49 @@ body {
 
 /* PORTFOLIO */
 
-/* Main */
+.portfolio {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+}
 
 .filter-list {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
   column-gap: 24px;
+  row-gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list {
+    justify-content: center;
+    margin-bottom: 64px;
+    column-gap: 24px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .filter-list {
+    margin-bottom: 72px;
+    column-gap: 24px;
+  }
 }
 
 .filter-btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 8px 20px;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 
@@ -1182,6 +1212,12 @@ body {
 
   color: var(--iris);
   background-color: var(--cloud);
+}
+
+@media screen and (min-width: 768px) {
+  .filter-btn {
+    padding: 12px 24px;
+  }
 }
 
 .filter-btn:hover,
@@ -1193,20 +1229,55 @@ body {
 }
 
 .filter-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
 }
+@media screen and (min-width: 768px) {
+  .filter-cards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .filter-cards {
+    row-gap: 48px;
+  }
+}
+
 .filter-card {
+  width: 100%;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 
   transition: box-shadow 250ms var(--timing-function);
+}
+@media screen and (min-width: 768px) {
+  .filter-card {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .filter-card {
+    width: calc((100% - 24px * 2) / 3);
+  }
+}
+
+.filter-card:not(:last-child) {
+  margin-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .filter-card:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .filter-card:hover,
 .filter-card:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.filter-img {
+  width: 100%;
 }
 
 .card-thumb {

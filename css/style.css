@@ -887,7 +887,7 @@ body {
   }
 }
 
-.contacts-list_mobile > .list-item:not(:last-child) {
+.nav-list_mobile > .list-item:not(:last-child) {
   margin-bottom: 40px;
 }
 
@@ -922,25 +922,19 @@ body {
 
   color: var(--slate);
 
-  transition: color 250ms var(--timing-function),
-    font-size 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 }
-/* .tel-mobile {
+.tel-mobile {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.1111;
   text-transform: capitalize;
 
   color: var(--iris);
-} */
+}
 .contact-link_mobile:hover,
 .contact-link_mobile:focus {
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1.1111;
-  text-transform: capitalize;
-
-  color: var(--iris);
+  color: var(--ocean);
 }
 
 .social-mobile {
